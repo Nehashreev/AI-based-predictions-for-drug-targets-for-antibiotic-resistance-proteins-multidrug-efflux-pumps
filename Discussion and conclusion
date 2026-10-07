@@ -1,0 +1,173 @@
+5. Discussion 
+
+The present study was designed to characterize the deep binding pocket (DBP) of the MexB multidrug efflux transporter and to identify ligands capable of occupying this region through a structure-based computational workflow (Satoshi  et al.,2006). The analysis progressed from structural characterization of MexB to conformational-state comparison, binding-pocket prediction, virtual screening, docking, and interaction-based validation using experimentally characterized reference ligands. 
+
+5.1 Structural characterization of the MexB binding pocket 
+
+The MexB structure used in this study was analyzed as a trimeric RND transporter containing three conformationally distinct protomers corresponding to the Access, Binding, and Extrusion states (Akihito et al., 2025). Structural superposition of the transmembrane domains showed that the major conformational differences occur primarily in the porter domain rather than being attributable to large changes in the transmembrane region. This supports the use of the Binding-state protomer for detailed ligand-binding analysis. 
+
+The Binding-state porter domain was selected for subsequent DBP characterization because this state represents the conformation associated with ligand recognition and binding within the porter domain. P2Rank analysis subsequently identified candidate ligand-binding regions, allowing the distal/deep binding region to be investigated computationally (Radoslav  et al., 2018). 
+
+5.2 Identification of the core DBP residues 
+
+Detailed structural analysis identified six residues forming the core region used for subsequent ligand-interaction analysis: 
+
+PHE178  
+
+VAL139  
+
+TYR327  
+
+PHE573  
+
+PHE610  
+
+PHE628  
+
+The predominance of phenylalanine residues is consistent with the aromatic character of the MexB distal binding region described in previous structural studies(Ryosuke  et al.,2013). These residues provide a combination of hydrophobic and aromatic environments that can accommodate chemically diverse ligand structures. 
+
+The distance analysis of the five top-ranked predicted ligands showed that all five ligands had a heavy-atom contact within 4 Å of each of the six core residues. Thus, each of the selected predicted ligands demonstrated a 6/6 core-residue contact pattern under the distance criterion used in this study (Jerome et al., 2021). 
+
+The minimum distances were generally approximately 3.15–3.75 Å. These distances are consistent with close ligand–residue proximity and support the interpretation that the selected ligands occupy the defined DBP region rather than merely docking elsewhere within the large search box. 
+
+5.3 Docking performance of the predicted ligands 
+
+The five selected predicted ligands showed Vina scores ranging from −10.44 to −12.90 kcal/mol: 
+
+Ligand 
+
+Vina score (kcal/mol) 
+
+Core contacts 
+
+CHEMBL254328 
+
+−12.90 
+
+6/6 
+
+CHEMBL1170 
+
+−11.72 
+
+6/6 
+
+CHEMBL1200374 
+
+−11.25 
+
+6/6 
+
+CHEMBL2107826 
+
+−10.98 
+
+6/6 
+
+CHEMBL1336 
+
+−10.44 
+
+6/6 
+
+CHEMBL254328 produced the most negative Vina score among the five selected compounds, at −12.90 kcal/mol, and simultaneously maintained contacts with all six core residues. Its minimum distance to PHE178 was approximately 3.15 Å, representing the shortest PHE178 contact among the five predicted ligands (Jerome et al., 2021). 
+
+CHEMBL1170, CHEMBL1200374, CHEMBL2107826 and CHEMBL1336 similarly maintained contacts across the complete six-residue core. This consistency is important because it indicates that the selection was not based solely on docking score; the ligands also reproduced the spatial occupation of the defined DBP. 
+
+However, the Vina scores should be interpreted as computational docking scores, not experimentally measured binding free energies. Differences between docking scores should therefore be considered within the limitations of the docking method (Jerome et al., 2021). 
+
+5.4 Nature of ligand–residue interactions 
+
+The geometry analysis classified most interactions involving PHE178, PHE573, PHE610, PHE628 and TYR327 as aromatic-contact candidates. VAL139 was generally classified as a close-contact residue. 
+
+For example, CHEMBL254328 showed minimum distances of: 
+
+PHE178 — 3.154 Å  
+
+VAL139 — 3.487 Å  
+
+TYR327 — 3.566 Å  
+
+PHE573 — 3.731 Å  
+
+PHE610 — 3.705 Å  
+
+PHE628 — 3.429 Å  
+
+This pattern indicates that CHEMBL254328 occupies the central region defined by the six core residues and establishes close contacts across both aromatic and hydrophobic components of the pocket (Ryosuke  et al.,2013). 
+
+The interaction pattern was not identical for every ligand. Some ligands contacted aromatic residues through carbon atoms, whereas others contained oxygen or fluorine atoms positioned near aromatic residues. This demonstrates that the DBP can accommodate different chemical functionalities while maintaining occupation of the same structural region. 
+
+Importantly, the automated analysis describes these interactions as “aromatic-contact candidates” based primarily on distance and atom/residue characteristics. They should not automatically be interpreted as experimentally confirmed π–π stacking, hydrogen bonding, halogen bonding, or other specific interaction types without examination of the complete 3D geometry. 
+
+ 
+
+5.5 Validation using experimentally characterized reference ligands 
+
+Four experimentally characterized reference compounds were independently docked into the same Binding-state DBP: 
+
+Reference ligand 
+
+Vina score (kcal/mol) 
+
+Core contacts 
+
+Experimental activity 
+
+CHEMBL191703 
+
+−10.03 
+
+4/6 
+
+MIC 8.0 µg/mL 
+
+CHEMBL297453 
+
+−10.72 
+
+5/6 
+
+MIC 12.6992 µg/mL 
+
+CHEMBL4064721 
+
+−9.355 
+
+6/6 
+
+MEC >100 µM 
+
+CHEMBL5569750 
+
+−9.448 
+
+6/6 
+
+MEC 18.9404 µM 
+
+Three of the four reference ligands reproduced at least five of the six core-residue contacts, while CHEMBL191703 reproduced four of six. CHEMBL4064721 and CHEMBL5569750 reproduced the complete 6/6 core-contact pattern. 
+
+This provides structural support for the relevance of the defined six-residue DBP because experimentally characterized compounds were able to occupy the same region identified during the computational workflow (Ryosuke  et al.,2013). 
+
+The reference-ligand results also demonstrate why docking score alone should not be used as the sole validation criterion. For example, CHEMBL297453 had a Vina score of −10.72 kcal/mol and five core contacts, whereas CHEMBL4064721 had a less negative score of −9.355 kcal/mol but six core contacts. Furthermore, the experimental activities are reported using different measures and units (MIC versus MEC), so a direct numerical correlation between the experimental activity values and Vina scores cannot be established from this small dataset. 
+
+5.6 Overall interpretation 
+
+Taken together, the docking and geometry analyses provide a consistent computational picture of the MexB DBP. The predicted ligands and experimentally characterized reference compounds were capable of occupying a common region defined by PHE178, VAL139, TYR327, PHE573, PHE610 and PHE628. 
+
+The combination of P2Rank pocket prediction → Binding-state selection → DBP docking → core-residue interaction analysis → reference-ligand validation provides greater structural evidence than relying on docking affinity alone. 
+
+The results therefore support the use of the identified six-residue region as a computationally defined DBP interaction signature for subsequent ligand prioritization. Experimental biochemical or microbiological assays would nevertheless be required to establish whether the predicted compounds inhibit MexB function and to determine their actual potency. 
+
+6. Conclusion 
+
+The present study established a structure-based computational workflow for characterization and ligand screening of the MexB multidrug efflux transporter. Structural analysis of the MexB trimer enabled identification of the Access, Binding and Extrusion conformational states, followed by selection of the Binding-state protomer for detailed investigation of ligand recognition (Ryosuke  et al.,2013). 
+
+P2Rank-based pocket prediction and subsequent structural analysis identified a deep binding region containing six core residues: PHE178, VAL139, TYR327, PHE573, PHE610 and PHE628. These residues were subsequently used as a structural interaction signature for evaluating docked ligands (Radoslav  et al., 2018). 
+
+Virtual screening and molecular docking identified five predicted ligands with Vina scores between −10.44 and −12.90 kcal/mol. All five predicted ligands established contacts within 4 Å of all six defined core residues. Among them, CHEMBL254328 produced the most negative docking score (−12.90 kcal/mol) and showed a complete 6/6 core-residue contact pattern, making it a suitable representative ligand for visualization and further computational investigation (Radoslav  et al., 2018). 
+
+Independent docking of four experimentally characterized reference ligands provided additional structural validation. Three reference compounds reproduced five or all six core contacts, while the remaining compound reproduced four of six. This demonstrates that the computationally defined DBP is capable of accommodating experimentally characterized MexB-associated compounds (Ryosuke  et al.,2013). 
+
+Overall, the study demonstrates that combining conformational-state analysis, P2Rank pocket prediction, AutoDock Vina docking, distance-based interaction analysis and reference-ligand validation can be used to characterize the MexB deep binding pocket and prioritize candidate ligands for further investigation.The computational results provide a structural basis for future studies aimed at developing MexB inhibitors. However, the docking scores and predicted interactions should be regarded as hypotheses requiring experimental validation, such as MexB inhibition assays, efflux assays, antimicrobial susceptibility testing, and ultimately biochemical or structural studies. 
