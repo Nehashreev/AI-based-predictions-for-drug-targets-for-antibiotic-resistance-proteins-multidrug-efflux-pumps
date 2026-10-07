@@ -1,0 +1,27 @@
+AI-based predictions for drug targets for   antibiotic resistance proteins- multidrug efflux pumps in Pseudomonas aeruginosa 
+
+By-Nehashree.V 
+
+MSc. Biotechnology (Jain University), 
+Advanced diploma in Bioinformatics (LLRI) 
+September 24 2026
+
+AI-based predictions for drug targets for antibiotic resistance proteins- multidrug efflux pumps in Pseudomonas aeruginosa 
+
+Abstract 
+
+Multidrug efflux pumps are major contributors to antibiotic resistance in Pseudomonas aeruginosa, making their inhibition an important strategy for improving 
+antimicrobial efficacy. MexB, the inner-membrane component of the MexAB-OprM resistance-nodulation-division (RND) efflux system, contains structurally distinct
+drug-binding regions that accommodate chemically diverse compounds (Murakami et al., 2006; Du et al., 2015).The present study employed a structure-based computational 
+approach to characterize the drug-binding pocket (DBP) of MexB and identify potential ligand-binding candidates. The MexB binding-state structure was prepared and analyzed
+using structural alignment and pocket-prediction methods, with P2Rank used to identify candidate ligand-binding regions (Krivák and Hoksza, 2018). 
+A docking grid was subsequently defined around the selected deep binding pocket, and 30 ChEMBL-derived ligands were screened using AutoDock Vina (Eberhardt et al., 2021).  
+The five highest-scoring predicted ligands showed docking affinities ranging from −10.44 to −12.90 kcal/mol. Interaction analysis identified six recurrent DBP residues 
+PHE178, VAL139, TYR327, PHE573, PHE610, and PHE628 which were used as a structural contact signature for further validation. All five predicted top ligands showed heavy-atom
+distances 
+of ≤4 Å from all six core residues. To assess whether the selected pocket was also compatible with experimentally characterized compounds, four reference ligands were independently docked.
+Three of the four reference compounds contacted five or six of the six core residues, while one contacted four residues. The aromatic-rich nature of the identified region is 
+consistent withprevious structural studies describing a phenylalanine-rich drug-binding environment within the MexB distal pocket (Nakashima et al., 2013). Overall, 
+the results provide computational evidence supporting the selected MexB DBP as a recurrent ligand-interaction region and identify candidate compounds for further investigation. 
+However, docking scores and distance-based contacts represent computational predictions and do not establish experimental binding affinity or efflux-inhibition activity; 
+biochemical, cellular, molecular-dynamics, or other experimental validation would therefore be required to confirm the predicted interactions (Eberhardt et al., 2021). 
