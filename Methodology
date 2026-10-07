@@ -1,0 +1,285 @@
+3.Methodology 
+
+3.1 Target Structural Modeling 
+
+Data Sourcing: 
+
+Target sequences from the Comprehensive Antibiotic Resistance Database were retrieved. Focus was on high-priority RND pump MexB (P. aeruginosa) (Du et al., 2015). 
+
+Specific Target Sequences were retrieved manually: 
+
+MexB was searched on the search bar on the CARD Homepage. Once results are seen, specific entry linked to its Antibiotic Resistance Ontology (ARO) classification was selected. Then followed by Scrolling down to the Reference Sequences section on the gene page to view, copy, or download the FASTA-formatted sequences for that specific target. The fasta sequence for the MexB protein was copied. 
+
+Conformational Sampling: 
+
+To robustly train machine learning or molecular docking models against the peristaltic functional cycle of bacterial efflux pumps, it is necessary to gather structural snapshots representing all three asymmetrical functional states: Access/Loose (L), Binding/Tight (T), and Extrusion/Open (O) (Murakami et al., 2006). 
+
+Identifying Key Efflux Pump PDB IDs By Conformation (Berman et al., 2000): 
+
+Efflux Pump Component 
+
+Organism 
+
+Key PDB IDs 
+
+Multidrug resistance protein MexB (protein) 
+
+Pseudomonas aeruginosa PAO1 
+
+3W9I 
+
+ 
+
+Multidrug resistance protein MexB (protein) 
+
+Pseudomonas aeruginosa PAO1 
+
+3W9J 
+
+ 
+
+3.2 Selection and preparation of the MexB protein structure 
+
+The three-dimensional structure of the MexB multidrug efflux transporter from Pseudomonas aeruginosa was selected from the Protein Data Bank (PDB) using the structure 3W9I. The biological assembly containing the MexB homotrimer was used for subsequent structural analysis. The three protomers were designated according to their conformational states as Access (chain A), Binding (chain B), and Extrusion (chain C). 
+
+The structure was inspected and processed to obtain suitable coordinate files for computational analysis. The three conformational states were retained separately to allow comparison of structural changes associated with the functional transport cycle (Ryosuke  et al.,2013). 
+
+3.3 Conformational-state analysis of MexB 
+
+To characterize the structural differences between the Access, Binding, and Extrusion states, the transmembrane domains (TMDs) of the three MexB protomers were used as structural alignment references. The TMD regions were selected because they provide a relatively conserved structural framework, allowing differences in the porter domains to be examined independently of overall protomer orientation (Helen et al.,2000) 
+
+The Access, Binding, and Extrusion structures were aligned using their corresponding TMD regions. Root-mean-square deviation (RMSD) values were calculated to assess the structural similarity of the TMD regions following superposition. 
+
+The relative movement of the porter domains was subsequently evaluated by measuring distances between selected PN1–PN2 and PC1–PC2 regions in each conformational state. This analysis was used to characterize the progressive opening and closing of the porter domain during the Access → Binding → Extrusion transition. 
+
+3.4 Identification of functionally relevant residues 
+
+Residues associated with the MexB proton-relay mechanism were examined to ensure that important functional regions of the transporter were retained correctly in the structural model. Particular attention was given to ASP407, ASP408, LYS939, and THR976, which are located within the proton-relay/transmembrane region (Satoshi et al., 2006). 
+
+The analysis also examined the phenylalanine-rich regions of the porter domain because aromatic residues can contribute to ligand recognition and stabilization within the internal binding cavities. 
+
+3.5 Identification of ligand-binding pockets using P2Rank 
+
+Potential ligand-binding pockets in the MexB structure were identified using P2Rank 2.5.1, a machine-learning-based binding-site prediction method (Radoslav  et al., 2018). 
+
+The aligned MexB conformational structures were submitted for pocket prediction, and the predicted pocket locations, scores, probabilities, and associated residues were examined. Based on the predicted pocket location and its position within the porter domain, the Deep Binding Pocket (DBP) in the Binding state was selected as the principal docking site for ligand screening. 
+
+3.6 Definition of the Deep Binding Pocket 
+
+The DBP was defined using the P2Rank-predicted pocket coordinates. A docking box was subsequently constructed around the predicted DBP to encompass the pocket and its surrounding ligand-accessible region (Jerome et al., 2021). 
+
+The final docking grid parameters used for the DBP were: 
+
+Parameter 
+
+Value 
+
+Center X 
+
+−11.731 
+
+Center Y 
+
+−0.815 
+
+Center Z 
+
+−28.409 
+
+Size X 
+
+32 Å 
+
+Size Y 
+
+28 Å 
+
+Size Z 
+
+28 Å 
+
+Exhaustiveness 
+
+16 
+
+Number of modes 
+
+9 
+
+Energy range 
+
+3 kcal/mol 
+
+Random seed 
+
+42 
+
+The same docking box and parameters were maintained throughout the ligand docking and reference-ligand validation steps to ensure consistency. 
+
+3.7 Selection of DBP core residues 
+
+Based on the structural location of the predicted DBP and the observed phenylalanine-rich binding environment, six residues were selected as the core DBP residues for subsequent interaction analysis: 
+
+VAL139  
+
+PHE178  
+
+TYR327  
+
+PHE573  
+
+PHE610  
+
+PHE628  
+
+These residues were used as structural markers to determine whether docked ligands occupied the intended DBP region (Jerome et al., 2021). 
+
+3.8 Ligand dataset preparation 
+
+A ligand dataset consisting of candidate compounds associated with MexB-related screening was assembled. The ligands were prepared in PDBQT format for molecular docking. 
+
+The ligand preparation workflow included obtaining the ligand structures, converting them into appropriate three-dimensional representations, assigning the required molecular properties for docking, and generating individual PDBQT files (Jerome et al., 2021). 
+
+A total of 30 candidate ligands were prepared and subjected to docking against the defined MexB DBP. 
+
+3.9 Molecular docking of candidate ligands 
+
+Molecular docking was performed using AutoDock Vina v1.2.7. Each of the 30 candidate ligands was independently docked into the defined DBP of the MexB Binding-state structure. 
+
+The same receptor, docking grid, exhaustiveness, number of output modes, energy range, and random seed were used for all compounds (Jerome et al., 2021). 
+
+For each ligand, the docking program generated multiple possible binding poses. The pose with the most favorable predicted binding affinity (lowest/more negative Vina binding energy) was selected as the primary pose for subsequent analysis. 
+
+3.10 Preliminary computational ranking of candidate ligands 
+
+The 30 docked compounds were evaluated according to their predicted Vina binding affinities. Compounds showing more favorable docking scores were selected for detailed structural analysis (Jerome et al., 2021). 
+
+The top five computationally predicted candidates were: 
+
+Ligand 
+
+Vina score 
+
+CHEMBL254328 
+
+−12.90 kcal/mol 
+
+CHEMBL1170 
+
+−11.72 kcal/mol 
+
+CHEMBL1200374 
+
+−11.25 kcal/mol 
+
+CHEMBL2107826 
+
+−10.98 kcal/mol 
+
+CHEMBL1336 
+
+−10.44 kcal/mol 
+
+These compounds were subsequently examined for their interactions with the six predefined DBP core residues. 
+
+3.11 Core-residue contact analysis 
+
+To determine whether the selected ligands occupied the intended DBP rather than an alternative region of the receptor, the minimum distance between each docked ligand and each of the six core DBP residues was calculated. 
+
+A 4 Å distance threshold was used to identify close ligand–residue contacts. 
+
+For each ligand, the minimum heavy-atom distance to: 
+
+PHE178  
+
+VAL139  
+
+TYR327  
+
+PHE573  
+
+PHE610  
+
+PHE628  
+
+was calculated. 
+
+Residues occurring within 4 Å of a ligand were classified as having a close contact. Aromatic residues showing close contacts were additionally flagged as aromatic-contact candidates. This designation was used as a geometric descriptor and was not interpreted as definitive evidence of a specific π–π interaction (Jerome et al., 2021). 
+
+3.12 Validation using experimentally characterized reference ligands 
+
+To assess whether the docking protocol could reproduce the interaction environment observed for experimentally characterized MexB-associated compounds, four reference ligands were selected: 
+
+CHEMBL191703  
+
+CHEMBL297453  
+
+CHEMBL4064721  
+
+CHEMBL5569750  
+
+The reference ligands were prepared in PDBQT format and docked into the same DBP docking grid using the same AutoDock Vina parameters applied to the candidate compounds (Jerome et al., 2021). 
+
+The experimentally reported activity information associated with these reference compounds was retained as a separate validation field, including MIC and MEC measurements where available. 
+
+3.13 Structural validation of reference-ligand binding 
+
+The best-scoring docking pose of each reference ligand was analyzed against the six predefined DBP core residues using the same 4 Å contact criterion applied to the candidate ligands (Jerome et al., 2021). 
+
+The resulting core-contact counts were: 
+
+Reference ligand 
+
+Core contacts 
+
+CHEMBL4064721 
+
+6/6 
+
+CHEMBL5569750 
+
+6/6 
+
+CHEMBL297453 
+
+5/6 
+
+CHEMBL191703 
+
+4/6 
+
+This provided a structural validation framework for assessing whether the defined DBP and its core residue set were capable of accommodating experimentally characterized ligands. 
+
+3.14 Comparative analysis of predicted and reference ligands 
+
+The candidate and reference ligands were compared using three principal computational parameters: 
+
+Vina docking score  
+
+Number of DBP core-residue contacts  
+
+Minimum ligand–residue distances  
+
+The top five predicted candidates all showed 6/6 contacts with the predefined DBP core residues, indicating that their docked poses occupied the selected DBP region consistently. 
+
+The reference compounds showed 4–6/6 core-residue contacts, providing additional evidence that the selected six-residue region represents a structurally relevant ligand-interaction environment (Eberhardt et al., 2021). 
+
+Experimental activity values were retained for contextual validation but were not directly equated with Vina docking scores because the reference measurements included different experimental endpoints and units, such as MIC and MEC. 
+
+3.15 Final candidate identification 
+
+The final candidate set was determined by integrating docking affinity with structural interaction analysis. Compounds were considered computationally promising when they demonstrated favorable predicted binding energies together with extensive contacts with the predefined DBP core residues.The resulting candidates were therefore proposed as computationally prioritized MexB DBP-binding compounds for further investigation (Eberhardt et al., 2021). 
+
+3.16 Computational workflow summary 
+
+The complete workflow can be summarized as: 
+
+MexB structure selection → conformational-state identification → TMD-based structural alignment → porter-domain movement analysis → functional residue inspection → P2Rank pocket prediction → DBP selection → DBP core-residue definition → ligand preparation → AutoDock Vina docking → docking-score ranking → core-residue contact analysis → experimental reference-ligand docking → structural validation → final candidate prioritization 
+
+3.17 Computational limitations 
+
+The docking analysis represents a computational prediction and does not establish experimental inhibition of MexB. AutoDock Vina scores should therefore be interpreted as predicted binding affinities rather than experimentally measured affinities. 
+
+Additionally, the docking procedure used a relatively rigid receptor model and a single defined DBP conformation. Protein flexibility, solvent effects, induced-fit effects, and dynamic changes occurring during the MexB transport cycle may not be fully represented. The 4 Å contact criterion is also a geometric screening criterion and does not by itself establish the exact chemical nature of ligand–residue interactions. 
+
+Consequently, the identified compounds should be considered computational candidates requiring further validation, potentially through molecular dynamics simulations, more detailed interaction analysis, free-energy calculations, and/or experimental assays. 
