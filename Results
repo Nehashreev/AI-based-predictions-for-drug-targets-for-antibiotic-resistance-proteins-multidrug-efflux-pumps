@@ -1,0 +1,397 @@
+4. RESULTS 
+
+4.1 Structural characterization of MexB conformational states 
+
+The three-dimensional structure of the MexB multidrug efflux transporter from Pseudomonas aeruginosa was analyzed using the biological assembly of PDB structure 3W9I. The MexB homotrimer consists of three protomers representing distinct functional conformations. Chain A was assigned as the Access state, chain B as the Binding state, and chain C as the Extrusion state. 
+
+To compare the conformations while minimizing the effect of overall protomer orientation, the transmembrane domains (TMDs) were used for structural superposition. A total of 246 TMD atoms were used for each protomer. The Binding state showed an RMSD of 1.838 Å relative to the Access state, whereas the Extrusion state showed an RMSD of 1.347 Å relative to the Access state. These values indicate that the transmembrane regions remain relatively conserved between the conformational states (Murakami et al., 2006). 
+
+Changes in the porter domain were assessed using PN1–PN2 and PC1–PC2 distances. The PN1–PN2 distance increased from 24.95 Å in the Access state to 26.25 Å in the Binding state and 28.29 Å in the Extrusion state. In contrast, the PC1–PC2 distance increased from 23.36 Å in Access to 25.46 Å in Binding and subsequently decreased to 21.43 Å in Extrusion. These measurements demonstrate distinct conformational rearrangements within the porter domain during the MexB transport cycle. 
+
+Table 1. Structural comparison of MexB conformational states 
+
+State 
+
+Chain 
+
+PN1–PN2 (Å) 
+
+PC1–PC2 (Å) 
+
+TMD RMSD vs Access 
+
+Access 
+
+A 
+
+24.95 
+
+23.36 
+
+Reference 
+
+Binding 
+
+B 
+
+26.25 
+
+25.46 
+
+1.838 Å 
+
+Extrusion 
+
+C 
+
+28.29 
+
+21.43 
+
+1.347 Å 
+
+ 
+
+4.2 Identification of the Deep Binding Pocket 
+
+Potential ligand-binding pockets were identified using P2Rank 2.5.1. Analysis of the predicted pockets in the context of the three MexB conformational states identified a functionally relevant pocket within the porter domain of the Binding-state structure. This pocket was selected as the Deep Binding Pocket (DBP) for subsequent ligand screening (Radoslav  et al., 2018). 
+
+The docking region was defined around the predicted DBP using a grid center of −11.731, −0.815, and −28.409 Å along the X, Y, and Z axes, respectively. The docking box dimensions were 32 × 28 × 28 Å. 
+
+Six residues located within the selected pocket were defined as the core DBP residues: VAL139, PHE178, TYR327, PHE573, PHE610, and PHE628. 
+
+Table 2. Core residues of the MexB Deep Binding Pocket 
+
+Residue 
+
+Amino acid 
+
+Structural characteristic 
+
+VAL139 
+
+Valine 
+
+Hydrophobic pocket residue 
+
+PHE178 
+
+Phenylalanine 
+
+Aromatic pocket residue 
+
+TYR327 
+
+Tyrosine 
+
+Aromatic pocket residue 
+
+PHE573 
+
+Phenylalanine 
+
+Aromatic pocket residue 
+
+PHE610 
+
+Phenylalanine 
+
+Aromatic pocket residue 
+
+PHE628 
+
+Phenylalanine 
+
+Aromatic pocket residue 
+
+ 
+
+The DBP therefore contains a predominantly hydrophobic and aromatic environment, with four phenylalanine residues and one tyrosine contributing to the selected ligand-interaction region. 
+
+4.3 Molecular docking of candidate ligands 
+
+A total of 30 candidate ligands were docked into the defined MexB DBP using AutoDock Vina v1.2.7. The same receptor structure, docking grid, exhaustiveness, number of modes, energy range, and random seed were used for all ligands (Eberhardt et al., 2021). 
+
+The five compounds with the most favorable predicted docking scores were selected for detailed interaction analysis. Their Vina scores ranged from −10.44 to −12.90 kcal/mol. 
+
+Table 3. Top five computationally prioritized ligands 
+
+Rank 
+
+Ligand 
+
+Vina score (kcal/mol) 
+
+Core contacts 
+
+1 
+
+CHEMBL254328 
+
+−12.90 
+
+6/6 
+
+2 
+
+CHEMBL1170 
+
+−11.72 
+
+6/6 
+
+3 
+
+CHEMBL1200374 
+
+−11.25 
+
+6/6 
+
+4 
+
+CHEMBL2107826 
+
+−10.98 
+
+6/6 
+
+5 
+
+CHEMBL1336 
+
+−10.44 
+
+6/6 
+
+ 
+
+All five prioritized compounds showed close contacts with all six predefined DBP core residues using the 4 Å contact criterion. 
+
+4.4 Core-residue interaction analysis 
+
+Minimum heavy-atom distances between the docked ligands and the six DBP core residues were calculated to determine whether the compounds occupied the intended binding region (Ref-Structural analysis) 
+
+All five computationally prioritized compounds demonstrated distances below 4 Å for each of the six core residues. The observed distances ranged from approximately 3.15 to 3.75 Å. 
+
+Table 4. Minimum distances between top predicted ligands and DBP core residues 
+
+Ligand 
+
+PHE178 
+
+VAL139 
+
+TYR327 
+
+PHE573 
+
+PHE610 
+
+PHE628 
+
+Contacts 
+
+CHEMBL254328 
+
+3.154 
+
+3.487 
+
+3.566 
+
+3.731 
+
+3.705 
+
+3.429 
+
+6/6 
+
+CHEMBL1170 
+
+3.297 
+
+3.520 
+
+3.566 
+
+3.746 
+
+3.729 
+
+3.353 
+
+6/6 
+
+CHEMBL1200374 
+
+3.454 
+
+3.644 
+
+3.448 
+
+3.331 
+
+3.562 
+
+3.415 
+
+6/6 
+
+CHEMBL2107826 
+
+3.457 
+
+3.441 
+
+3.563 
+
+3.571 
+
+3.482 
+
+3.636 
+
+6/6 
+
+CHEMBL1336 
+
+3.332 
+
+3.327 
+
+3.553 
+
+3.734 
+
+3.301 
+
+3.231 
+
+6/6 
+
+ 
+
+The consistent 6/6 contact pattern indicates that all five prioritized ligands occupied the predefined DBP core region. Close contacts involving PHE178, TYR327, PHE573, PHE610, and PHE628 were identified as aromatic-contact candidates based on their geometric proximity. These observations indicate proximity to the aromatic-rich pocket but do not by themselves establish specific π–π interactions. 
+
+ 
+
+4.5 Three-dimensional visualization of the MexB Deep Binding Pocket 
+
+A three-dimensional structural representation was generated to visualize the location of the representative top-ranked ligand CHEMBL254328 within the MexB Binding-state DBP. 
+
+The overall MexB trimer is shown with the Access, Binding, and Extrusion protomers represented separately, while the Binding-state protomer containing the docking site is highlighted. A magnified view of the DBP demonstrates that CHEMBL254328 is positioned within the predicted internal binding cavity and is surrounded by the six predefined core residues (Pettersen et al., 2021). 
+
+The minimum distances between CHEMBL254328 and the six core residues were approximately 3.15–3.73 Å, consistent with the quantitative contact analysis. The visualization therefore provides structural confirmation that the selected ligand occupies the intended DBP region. 
+
+Figure 4. Three-dimensional visualization of the MexB Deep Binding Pocket (Eric et al., 2020). 
+
+ 
+
+Figure 4. Three-dimensional representation of the MexB Binding-state Deep Binding Pocket (DBP) containing representative top-ranked ligand CHEMBL254328. The overall view shows the MexB homotrimer with the Binding-state protomer highlighted. The magnified DBP view shows CHEMBL254328 positioned within the pocket and surrounded by the six core residues: VAL139, PHE178, TYR327, PHE573, PHE610, and PHE628. Dashed lines indicate the minimum ligand–residue distances in Å (Eric et al., 2020). 
+
+The 3D visualization complements the distance-based analysis and demonstrates that the representative ligand is located within the predicted DBP rather than outside the selected binding region. 
+
+4.6 Validation using experimentally characterized reference ligands 
+
+To evaluate the structural relevance of the selected DBP, four experimentally characterized reference ligands were docked using the same receptor structure and docking parameters. 
+
+The reference compounds produced Vina scores ranging from −9.355 to −10.72 kcal/mol. Core-residue analysis showed that three of the four reference ligands established contacts with five or six of the six predefined DBP residues, while CHEMBL191703 established contacts with four of six residues (Ref- Vina). 
+
+Table 5. Docking and structural validation of reference ligands 
+
+Ligand 
+
+Experimental activity 
+
+Vina score (kcal/mol) 
+
+Core contacts 
+
+CHEMBL191703 
+
+MIC 8.0 µg/mL 
+
+−10.03 
+
+4/6 
+
+CHEMBL297453 
+
+MIC 12.6992 µg/mL 
+
+−10.72 
+
+5/6 
+
+CHEMBL4064721 
+
+MEC >100 µM 
+
+−9.355 
+
+6/6 
+
+CHEMBL5569750 
+
+MEC 18.9404 µM 
+
+−9.448 
+
+6/6 
+
+The observation that three reference ligands reproduced five or six of the predefined core contacts supports the structural relevance of the selected DBP for ligand interaction. 
+
+4.7 Overall comparison of predicted and reference ligands 
+
+The five computationally prioritized ligands demonstrated a consistent 6/6 DBP core-contact pattern. In comparison, the experimentally characterized reference ligands demonstrated 4/6 to 6/6 contacts. 
+
+Table 6. Overall comparison of candidate and reference ligand docking 
+
+Ligand group 
+
+Number of ligands 
+
+Vina score range (kcal/mol) 
+
+Core-contact range 
+
+Top predicted ligands 
+
+5 
+
+−10.44 to −12.90 
+
+6/6 
+
+Experimental references 
+
+4 
+
+−9.355 to −10.72 
+
+4/6 to 6/6 
+
+ 
+
+The results indicate that the computationally prioritized ligands consistently occupy the same predefined DBP core region used for validation. The reference-ligand analysis further supports the structural relevance of this pocket (Ref- Vina). 
+
+Experimental activity measurements were retained as validation information but were not directly compared numerically with Vina scores because the reference compounds were characterized using different experimental endpoints, including MIC and MEC, and these measurements cannot be directly equated with docking energies. 
+
+4.8 Summary of major findings 
+
+The structural analysis of MexB revealed measurable conformational differences between the Access, Binding, and Extrusion states, particularly within the porter domain, while the TMD regions remained comparatively conserved. 
+
+P2Rank analysis identified a ligand-binding region in the Binding-state structure, which was selected as the Deep Binding Pocket. Six residues VAL139, PHE178, TYR327, PHE573, PHE610, and PHE628 were defined as the core DBP residues. 
+
+Docking of 30 candidate compounds resulted in five computationally prioritized ligands with predicted Vina scores ranging from −10.44 to −12.90 kcal/mol. Importantly, all five compounds demonstrated contacts with all six DBP core residues within 4 Å. 
+
+The representative top-ranked compound, CHEMBL254328, showed a Vina score of −12.90 kcal/mol and established close contacts with all six core residues. Three-dimensional visualization confirmed its localization within the predicted DBP. 
+
+Docking of four experimentally characterized reference ligands resulted in 4/6 to 6/6 core-residue contacts, with three of four reference ligands showing at least five core contacts. Collectively, these findings support the use of the selected Binding-state DBP as a structurally relevant site for computational ligand screening. 
+
+The identified compounds should be regarded as computationally prioritized DBP-binding candidates. Their predicted docking scores and structural contacts do not constitute experimental evidence of MexB inhibition, and further experimental or molecular-dynamics-based validation would be required. 
+
+ 
