@@ -1,0 +1,142 @@
+2. REVIEW OF LITERATURE 
+
+2.1 Artificial Intelligence for Drug Discovery and Development in Alzheimer’s Disease 
+
+Artificial intelligence (AI) has become an increasingly important component of modern drug discovery because it can integrate and analyze large biological and chemical datasets that are difficult to process using conventional approaches. Alzheimer’s disease (AD) is one area in which these approaches are being explored extensively because of the complex interactions among genetic factors, molecular pathways, disease phenotypes, and therapeutic targets. The increasing availability of genomic, transcriptomic, proteomic, metabolomic, and clinical datasets has created opportunities for computational methods to identify disease-associated targets and prioritize potential therapeutic interventions (Qiu and Cheng, 2024). 
+
+One example is the Genome-wide Positioning Systems platform for Alzheimer’s medication Discovery (AlzGPS), which integrates information from more than 100 multi-omics datasets together with drug-repurposing information, protein–protein interaction networks, clinical-trial data, and metabolite-related information. Such integrated resources can support systematic identification and prioritization of candidate therapeutic targets rather than relying on a single biological dataset (Qiu and Cheng, 2024). 
+
+AI has also been applied to several stages of the pharmaceutical discovery pipeline, including target identification, virtual screening, drug–target interaction prediction, molecular property prediction, de novo molecular design, and drug repurposing. Chemical compounds can be represented in multiple computational forms, including molecular graphs, molecular fingerprints, SMILES strings, and three-dimensional structures. These representations provide different types of information that can be processed by machine-learning and deep-learning models (Qiu and Cheng, 2024). 
+
+Structure-based virtual screening and molecular docking remain important computational approaches for evaluating interactions between proteins and candidate ligands. However, the large size of chemical space and the computational cost associated with screening extensive compound libraries have encouraged the use of AI-assisted approaches. GPU-based computation and machine-learning models can improve the scalability of virtual screening and facilitate the prioritization of compounds for subsequent experimental evaluation (Qiu and Cheng, 2024). 
+
+AI-based approaches have also been investigated for drug repurposing and prediction of pharmacological properties. For example, image-based representations of molecules have been explored as an alternative to conventional molecular fingerprints. ImageMol, which learns chemical information from molecular images, has demonstrated applications in predicting molecular characteristics relevant to drug development, including metabolism, blood–brain barrier permeability, and toxicity. Such computational predictions can contribute to the early assessment of drug-like properties and ADMET characteristics (Qiu and Cheng, 2024). 
+
+Overall, research in AD demonstrates how AI can integrate heterogeneous biological and chemical information to support target identification and compound prioritization. These concepts are also relevant to antimicrobial drug discovery, where large numbers of candidate compounds and complex protein targets require efficient computational methods for systematic investigation.
+  
+2.2 Artificial Intelligence in Pharmaceutical Technology and Drug Delivery Design 
+
+AI encompasses a range of computational approaches, including machine learning, deep learning, and natural language processing, that can be applied to pharmaceutical research. Depending on the availability of labelled data and the objective of the analysis, supervised and unsupervised learning strategies may be used. Supervised learning establishes relationships between input features and known outputs, whereas unsupervised learning is primarily used to identify patterns, clusters, or relationships in datasets without predefined labels (Vora et al., 2023). 
+
+In pharmaceutical research, supervised machine-learning methods such as support vector machines, random forests, k-nearest-neighbour algorithms, naïve Bayes classifiers, and regression models have been applied to problems involving prediction and classification. Unsupervised approaches can support exploratory analysis through clustering, dimensionality reduction, anomaly detection, and identification of previously unrecognized patterns (Vora et al., 2023). 
+
+AI can contribute to multiple stages of drug development. Target identification uses biological information to detect disease-associated proteins and pathways, while virtual screening can prioritize compounds according to their predicted interactions with selected targets. Structure–activity relationship (SAR) modelling can connect chemical features with biological activity, helping researchers optimize potency and selectivity. Generative AI and related approaches can additionally be used for de novo design of chemical structures with specified characteristics (Vora et al., 2023). 
+
+Drug repurposing represents another application in which computational models analyze existing pharmaceutical and biological data to identify alternative therapeutic uses for previously investigated compounds. Similarly, toxicity prediction can be performed during the early stages of development to identify compounds with potentially undesirable properties before substantial experimental resources are invested (Vora et al., 2023). 
+
+AI has also been incorporated into pharmaceutical formulation and drug-delivery research. Drug behaviour in biological systems depends on molecular characteristics, formulation parameters, and interactions with physiological environments. Computational models can therefore be used to investigate relationships between formulation variables and drug-release behaviour. This may reduce the number of experimental iterations required during formulation development and facilitate more efficient optimization of pharmaceutical products (Vora et al., 2023). 
+
+These applications demonstrate that AI is not restricted to compound discovery itself but can contribute throughout the broader pharmaceutical development process. The ability to integrate diverse datasets and generate predictive models provides a useful foundation for applying computational methods to antimicrobial discovery and resistance-related research. 
+
+2.3 Integration of Artificial Intelligence into Drug Discovery and Early Drug Development 
+
+The integration of AI with multi-omics, network biology, structural biology, and computational chemistry has expanded the scope of computational drug discovery. Modern drug-development workflows can use AI to analyze genomic, proteomic, transcriptomic, and other biological datasets to identify disease-associated pathways and potential therapeutic targets (Ocaña et al., 2025). 
+
+Target discovery is particularly important during the early stages of drug development because the identification of a biologically relevant and druggable target influences subsequent compound-screening strategies. Omics-based analyses, CRISPR-based screening, gene knockout experiments, and other functional genomic approaches can provide evidence for genes and proteins involved in disease-associated processes. AI methods can subsequently assist in identifying patterns across these large datasets that may be difficult to recognize using conventional statistical approaches (Ocaña et al., 2025). 
+
+Machine-learning methods can also contribute to the assessment of protein druggability by integrating information concerning protein structure, function, pathways, and biological relationships. The expansion of predicted protein structures through approaches such as AlphaFold has further increased the number of proteins for which structural information is available for computational analysis. This has the potential to extend structure-based drug discovery to targets for which experimentally determined structures are unavailable (Ocaña et al., 2025). 
+
+AI can additionally support molecular dynamics and other structural approaches by helping analyse protein flexibility, molecular interactions, and stability. In principle, these methods can provide information about interactions between candidate compounds and proteins, including enzymes and membrane-associated targets. The integration of structural prediction with ligand-based and structure-based methods therefore provides a broader computational framework for drug discovery (Ocaña et al., 2025). 
+
+Another important application is personalized therapeutic development, in which genetic and molecular information is used to identify patient-specific treatment opportunities. Although many of these applications are primarily focused on human disease, the underlying computational principles—data integration, target identification, structural prediction, and ligand prioritization—are also applicable to infectious-disease research. 
+
+Consequently, AI-based approaches provide a framework in which biological target identification and chemical screening can be connected through computational workflows. This is particularly relevant to antimicrobial resistance, where rapid identification of therapeutically useful targets and compounds is an important research objective. 
+
+2.4 AI-Validated Brain-Targeted mRNA Lipid Nanoparticles with Neuronal Tropism 
+
+AI has also been applied to the development and optimization of drug-delivery systems. One recent approach investigated brain-targeted lipid nanoparticles (LNPs) designed to improve delivery of messenger RNA to neural tissues. Because delivery across the blood–brain barrier represents a major challenge in neurological therapeutics, researchers investigated surface-modifying molecules that could promote preferential interaction with brain-associated cells (Sela et al., 2025). 
+
+The study examined different targeting molecules, including derivatives associated with glucose, acetylcholine, memantine, methylphenidate, nicotine, norepinephrine, and tryptophan. These molecules were incorporated into LNP formulations containing components such as ionizable lipids, cholesterol, helper lipids, and polyethylene glycol (PEG)-associated lipids. Formulation parameters were systematically modified to obtain particles with suitable physical and biological characteristics (Sela et al., 2025). 
+
+A graph-based AI approach was combined with experimental testing to evaluate the performance of different formulations. Among the investigated targeting strategies, acetylcholine-conjugated nanoparticles showed favourable characteristics in terms of transfection and brain-associated expression. Additional experiments using human induced pluripotent stem cell-derived models and brain organoids were performed to investigate cellular selectivity and delivery characteristics (Sela et al., 2025). 
+
+The study illustrates how AI can be integrated with experimental pharmaceutical development rather than being used as an isolated computational technique. Machine-learning models can assist with formulation optimization and prediction, while laboratory experiments provide validation of the resulting computational predictions. Such combined approaches can reduce the search space and improve the efficiency of formulation development. 
+
+Although this work focuses on neurological drug delivery rather than antimicrobial targets, it demonstrates a broader principle relevant to the present study: AI and computational modelling can be used to prioritize complex biological and chemical possibilities before experimental validation. 
+
+2.5 A Novel Antibiotic Class Targeting the Lipopolysaccharide Transporter 
+
+The discovery of new antibacterial targets is increasingly important because conventional antibiotics are challenged by the emergence of multidrug-resistant organisms. One example of structure-guided antibacterial discovery is the development of zosurabalpin, a compound from a new class of tethered macrocyclic peptides (MCPs) that targets the bacterial lipopolysaccharide transport system in Acinetobacter baumannii (Zampaloni et al., 2024). 
+
+Researchers screened a large collection of chemical compounds to identify molecules with antibacterial activity against clinically important bacterial strains. The active compounds shared structural characteristics that contributed to their ability to interact with the selected bacterial target. Subsequent optimization was required because early compounds showed limitations associated with pharmacological behaviour and tolerability (Zampaloni et al., 2024). 
+
+The mechanism of action was investigated through a combination of microbiological, biochemical, structural, and animal studies. Resistance-selection experiments were used to examine the ability of bacteria to develop resistance to the compound. Additional experiments investigated the interaction of the compound with the LPS transport machinery and its ability to interfere with bacterial LPS transport (Zampaloni et al., 2024). 
+
+The optimized compound showed antibacterial activity against carbapenem-resistant A. baumannii and demonstrated efficacy in relevant animal infection models. These findings provided evidence that targeting an essential bacterial transport pathway can represent a viable strategy for developing antibiotics against highly resistant pathogens (Zampaloni et al., 2024). 
+
+This study is relevant to computational antimicrobial research because it demonstrates the importance of identifying structurally and functionally meaningful bacterial targets. It also highlights the need to combine computational or screening-based identification with biochemical and biological validation before a candidate can be considered a therapeutic lead. 
+
+2.6 Restriction of Arginine Induces Antibiotic Tolerance in Staphylococcus aureus 
+
+Antibiotic resistance and antibiotic tolerance can arise through multiple biological mechanisms, making it necessary to investigate bacterial pathways beyond conventional resistance genes. A study of Staphylococcus aureus biofilms used complementary genomic and proteomic approaches to identify mechanisms associated with antibiotic tolerance (Freiberg et al., 2024). 
+
+The researchers investigated biofilms using multiple S. aureus strains and combined transposon sequencing with quantitative proteomics. The transposon-based approach enabled systematic assessment of genes affecting antibiotic susceptibility, while proteomic analysis provided information about changes in protein abundance associated with the tolerant phenotype (Freiberg et al., 2024). 
+
+A high-density transposon library was generated and analysed to identify genes associated with altered antibiotic sensitivity. In parallel, label-free quantitative liquid chromatography–tandem mass spectrometry was used to examine the protein composition of biofilms. Combining these datasets allowed the researchers to identify biological pathways that were not necessarily obvious from either dataset independently (Freiberg et al., 2024). 
+
+The investigation identified a relationship between arginine availability, arginine metabolism, protein synthesis, and antibiotic tolerance. Restriction of arginine production affected bacterial protein synthesis and altered the response of S. aureus to antibiotic treatment. Additional experiments in animal infection models provided biological evidence supporting the importance of this metabolic pathway in antibiotic tolerance (Freiberg et al., 2024). 
+
+This study demonstrates the value of integrating independent datasets to identify mechanisms that contribute to antimicrobial treatment failure. The approach is conceptually relevant to AI-assisted target discovery because computational integration of genomic, proteomic, and phenotypic information can help identify biological processes that may subsequently be investigated as therapeutic targets. 
+
+2.7 Functional Re-annotation of the Mycobacteroides abscessus Proteome Using Integrative Sequence- and AI-Based Structural Approaches 
+
+Functional annotation of bacterial proteins is an important step in identifying potential therapeutic targets. This is particularly relevant for pathogens such as Mycobacteroides abscessus, which can cause persistent infections and present substantial treatment challenges, especially in individuals with underlying pulmonary disorders (Gnanasekar et al., 2025). 
+
+An integrative computational strategy was developed to improve functional annotation of the M. abscessus proteome. Rather than depending exclusively on sequence similarity, the researchers combined conventional sequence-based approaches with structural comparison and AI-assisted protein structure prediction. This allowed proteins with limited or uncertain annotation to be investigated using complementary sources of information (Gnanasekar et al., 2025). 
+
+The workflow incorporated information from UniProtKB and Gene Ontology resources, followed by sequence-based similarity searches. Profile-based searches using HMMER against protein-family resources such as Pfam and CATH were used to identify conserved functional or structural domains. Structural similarity searches were subsequently performed using Foldseek, while AlphaFold2-predicted structures provided additional structural information for proteins without experimentally determined models (Gnanasekar et al., 2025). 
+
+Structural matches to proteins with established functional annotations could then be used to improve the annotation of previously poorly characterized proteins. This strategy was particularly useful for proteins lacking reliable Gene Ontology assignments, as structural relationships can reveal similarities that may not be sufficiently evident from sequence-based analysis alone (Gnanasekar et al., 2025). 
+
+The study demonstrated that a substantial proportion of the M. abscessus proteome remained experimentally uncharacterized or incompletely annotated. Integrating sequence, domain, and structural information improved the functional characterization of these proteins and provided a basis for identifying proteins that could warrant further investigation as potential therapeutic targets (Gnanasekar et al., 2025). 
+
+This work illustrates the increasing importance of combining AI-based structural prediction with conventional bioinformatics. Such integrative strategies provide a useful conceptual foundation for computational studies of antibiotic-resistance proteins and membrane-associated drug targets. 
+
+2.8 AI-Guided Discovery and Optimization of Antimicrobial Peptides Using Species-Aware Language Models 
+
+Antimicrobial peptides (AMPs) represent another area in which AI has been applied to accelerate antimicrobial discovery. AMPs can act through membrane disruption or interactions with intracellular bacterial targets, making them attractive candidates for development as alternative antimicrobial agents. However, the large number of possible peptide sequences makes experimental screening of all candidates impractical (Bae et al., 2025). 
+
+To address this challenge, machine-learning and protein-language-model approaches have been developed to predict antimicrobial activity from peptide sequences. A species-aware framework can incorporate both peptide characteristics and information about the bacterial species against which activity is being predicted. This is important because antimicrobial activity may differ considerably between bacterial species (Bae et al., 2025). 
+
+The LLAMP framework incorporated a transformer-based protein language model, ESM-2, to learn sequence features and subsequently predict antimicrobial activity. Large peptide datasets were used during model development, while additional bacterial genomic information was incorporated to improve species-specific predictions. This strategy allowed peptide sequences to be evaluated according to predicted activity rather than requiring every candidate to undergo immediate laboratory testing (Bae et al., 2025). 
+
+The computational workflow also included filtering based on predicted activity and physicochemical properties. Stability, charge, and predicted minimum inhibitory concentration were considered when selecting candidate peptides for further analysis. Attention-based analysis was additionally used to investigate sequence regions that contributed strongly to the model's predictions (Bae et al., 2025). 
+
+The study demonstrates how protein-language models can reduce the experimental search space in antimicrobial discovery. Although the present project focuses on small-molecule ligands and a protein target rather than antimicrobial peptides, the underlying principle is similar: computational prediction can be used as a prioritization step before experimental evaluation. 
+
+2.9 Artificial Intelligence for Antimicrobial Resistance Detection and Prediction in Klebsiella pneumoniae 
+
+AI has also been increasingly applied to antimicrobial resistance detection and prediction using clinical and microbiological datasets. Rapid identification of resistance phenotypes is important because conventional antimicrobial susceptibility testing may require considerable time, potentially delaying selection of appropriate treatment. Machine-learning approaches can analyse diagnostic data to predict resistance patterns and susceptibility outcomes (Aggarwal et al., 2026). 
+
+A systematic review of AI applications in Klebsiella pneumoniae evaluated studies involving resistance detection, susceptibility prediction, minimum inhibitory concentration prediction, and identification of resistance mechanisms. The reviewed studies used different forms of clinical and laboratory information, including mass spectrometry and other diagnostic datasets (Aggarwal et al., 2026). 
+
+Resistance phenotype prediction represented a major application area, while some studies focused on rapid antimicrobial susceptibility testing or MIC prediction. Carbapenems were among the most frequently investigated antibiotic classes, reflecting the clinical importance of carbapenem-resistant K. pneumoniae. Resistance mechanisms involving enzymes such as carbapenemases and extended-spectrum β-lactamases were also investigated (Aggarwal et al., 2026). 
+
+Machine-learning approaches were more frequently used than deep-learning-only strategies in the reviewed literature. The increasing number of publications in recent years indicates rapid expansion of AI-based AMR research. However, high predictive performance in computational datasets does not automatically translate into clinical implementation, and external validation and prospective clinical assessment remain important (Aggarwal et al., 2026). 
+
+These observations emphasize that AI should be considered a decision-support and prioritization technology rather than a substitute for biological validation. The same principle applies to computational ligand screening, where predicted binding scores and structural interactions must ultimately be evaluated using experimental approaches. 
+
+2.10 Drug Resistance Prediction Using a Directed Flag Transformer 
+
+Recent advances in AI have also introduced structural representations of protein–ligand interactions for studying drug resistance. One such approach, DFFormer and the associated CAPTURE framework, was developed to investigate how mutations may influence drug resistance using structural and genomic information (Chen et al., 2025). 
+Large collections of experimentally determined protein–ligand complexes were used during model development. Protein–ligand structures from resources including PDBbind and CASF datasets provided information for model pretraining, fine-tuning, and evaluation. This strategy allowed the model to learn structural representations from experimentally characterized complexes before being applied to resistance-related questions (Chen et al., 2025). 
+
+The CAPTURE framework additionally incorporated genomic variation information to examine mutations associated with potential changes in drug response. In the SARS-CoV-2 Mpro application, genomic sequences were compared with a reference sequence to identify variants, after which structural and computational analyses were used to evaluate their potential relationship with drug resistance (Chen et al., 2025). 
+
+The study illustrates an important direction in computational drug discovery: combining protein structure, ligand interactions, sequence variation, and AI-based learning within a single analytical framework. Although the biological target differs from MexB, the approach reinforces the value of structural information when investigating drug–target interactions and resistance mechanisms. 
+
+2.11 Relevance of the Literature to the Present Study 
+
+The studies reviewed above demonstrate several complementary applications of computational and AI-based approaches in modern drug discovery and antimicrobial-resistance research. AI has been used for target identification, analysis of multi-omics datasets, protein-structure prediction, virtual screening, antimicrobial activity prediction, resistance detection, and investigation of mutation-associated changes in drug response (Qiu and Cheng, 2024; Ocaña et al., 2025; Aggarwal et al., 2026). 
+
+A recurring theme across these studies is that computational approaches are most useful when they are integrated with structural or biological evidence. Large datasets can be used to narrow the search space, while structural modelling can provide information about protein architecture and ligand-binding regions. Molecular docking and related approaches can then be used to investigate the possible interaction of candidate compounds with selected targets. 
+
+Multidrug efflux pumps are particularly relevant in this context because they contribute to bacterial resistance by exporting structurally diverse antimicrobial compounds. The RND family transporter MexB of Pseudomonas aeruginosa contains multiple functionally important regions within its porter domain and undergoes conformational transitions during substrate transport. Structural studies of RND transporters have demonstrated the importance of asymmetric protomers and a sequential Access–Binding–Extrusion mechanism (Murakami et al., 2006; Seeger et al., 2006; Du et al., 2015). 
+
+Previous structural work has also identified drug-recognition regions within bacterial multidrug exporters. In MexB, the distal binding region contains several aromatic residues that contribute to the recognition of chemically diverse compounds. Experimental studies have therefore provided a structural basis for investigating the internal drug-binding environment of this transporter (Nakashima et al., 2013). 
+
+The present study builds upon this structural knowledge by combining conformational-state analysis, machine-learning-based pocket prediction, molecular docking, and residue-level interaction analysis. P2Rank provides a computational method for identifying candidate ligand-binding sites from protein structures (Krivák and Hoksza, 2018), while AutoDock Vina provides a widely used framework for predicting ligand poses and estimating relative binding scores (Eberhardt et al., 2021). 
+
+Together, these approaches provide a rational computational workflow for examining the MexB deep binding pocket and prioritizing compounds for further investigation. Importantly, computational predictions should be considered hypotheses rather than direct evidence of biological inhibition. Experimental biochemical, microbiological, structural, or molecular-dynamics-based validation is therefore required to establish whether computationally prioritized compounds can interfere with MexB function. 
+
+The approach represents local protein–ligand structural environments using topological information rather than relying solely on conventional sequence or molecular descriptors. Structural regions surrounding a ligand can be converted into computational representations that capture relationships between atoms and their spatial organization. Transformer-based learning can then be used to identify patterns associated with binding and resistance (Chen et al., 2025). 
