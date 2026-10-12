@@ -1,0 +1,14 @@
+C:\Users\nehas\MexB_Ligand_Dataset\vina.exe ^
+ --receptor C:\Users\nehas\MexB_Ligand_Dataset\MexB_Binding_clean.pdbqt ^
+ --ligand C:\Users\nehas\MexB_Ligand_Dataset\MexB_reference_ligands_pdbqt\CHEMBL191703.pdbqt ^
+ --center_x -11.731 ^
+ --center_y -0.815 ^
+ --center_z -28.409 ^
+ --size_x 32 ^
+ --size_y 28 ^
+ --size_z 28 ^
+ --exhaustiveness 16 ^
+ --num_modes 9 ^
+ --energy_range 3 ^
+ --seed 42 ^
+ --out C:\Users\nehas\MexB_Ligand_Dataset\MexB_reference_DBP_docking\CHEMBL191703_MexB_DBP_out.pdbqt
