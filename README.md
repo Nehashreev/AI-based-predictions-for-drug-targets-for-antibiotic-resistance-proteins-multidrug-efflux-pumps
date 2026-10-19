@@ -365,5 +365,3 @@ Potential next steps include:
 2. Eberhardt, J., Santos-Martins, D., Tillack, A. F., & Forli, S. (2021). AutoDock Vina 1.2.0: New docking methods, expanded force field, and Python bindings. *Journal of Chemical Information and Modeling, 61*(8), 3891–3898. https://doi.org/10.1021/acs.jcim.1c00203
 
 3. Murakami, S., Nakashima, R., Yamashita, E., & Yamaguchi, A. (2002). Crystal structure of bacterial multidrug efflux transporter AcrB. *Nature, 419*, 587–593. https://doi.org/10.1038/nature01050
-
-ic work, describe the computational parameters, input structures, ligand preparation procedure, and limitations clearly so that the results can be independently assessed.
